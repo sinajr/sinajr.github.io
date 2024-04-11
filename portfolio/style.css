@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 body{
     position: relative;
@@ -172,7 +172,7 @@ a:hover{
 /*scroll to top and btn*/
 /* service start*/
 .background-img{
-    background-image: url(Image/wall2.jpg);
+    background-image: url("image/wall2.jpg");
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
@@ -251,7 +251,6 @@ a:hover{
 	transform:translate(-50%,-50%);
 	top:50%;
 	left:50%;
-    position: absolute;
 }
 /*start potdolio*/
 .containerr{
@@ -293,7 +292,11 @@ a:hover{
     animation: contentMove 1s;
 }
 @keyframes contentMove{
-    top:50%;
+    from{
+		top: -50%;
+	}to{
+		top: 50%;
+	}
 }
 .arrow-left{
     top:50%;
@@ -331,7 +334,6 @@ a:hover{
     .port-boxs{
         width: 30%;
         margin: 0 5%;
-        width:170px;
         height: 200px;
         box-shadow: 0px 0px 20px 5px #cde1f8;
     }
