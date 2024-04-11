@@ -36,7 +36,6 @@ scrollTopp.addEventListener('click',()=>{
   document.body.scrollTop=0;
   document.documentElement.scrollTop=0;
 })
-console.log(proBar)
 window.addEventListener('scroll',(event)=>{
   if( document.documentElement.scrollTop>500){
     proBar[0].classList.add('pro-start');
