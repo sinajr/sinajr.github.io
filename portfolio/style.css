@@ -288,15 +288,17 @@ background-image: url("image/wall2.jpg");
     height:auto;
     overflow: hidden;
 }
-.content-container:hover{
+.port-boxs:hover .content-container{
     animation: contentMove 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes contentMove{
     from{
-		top: -50%;
-	}to{
-		top: 50%;
-	}
+        top:-50%;
+    }
+    to{
+        top:50%;
+    }
 }
 .arrow-left{
     top:50%;
