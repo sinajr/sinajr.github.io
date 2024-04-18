@@ -27,6 +27,10 @@ justify-content: center;
 	background-color: #fff;
 	border: 1px solid #eee;
 }
+.bg-newback{
+	transition: 2s;
+	background-color:#ff0000 !important;
+}
 .btn-cal:hover{
 	background-color: #aaa;
 }
