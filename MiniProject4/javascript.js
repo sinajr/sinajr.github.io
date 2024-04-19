@@ -1,22 +1,30 @@
 let $=document;
 let btns=$.querySelectorAll('.btn-cal');
 let showCal=$.getElementById('cal-res');
-let result;
+let resultStr;
+let resultNum;
 showCal.addEventListener('keydown',(e)=>{
     if(e.key==="Enter"){
-        showCal.value=result
+        resultStr=showCal.value;
+        console.log(resultStr);
+        showCal.value=""
     }
 })
 btns.forEach(function(cal){
     cal.addEventListener('click',(e)=>{
-        cal.classList.add("bg-newback");
+        // cal.classList.add("bg-newback");
+        if(e.target.innerHTML=="="){
+            resultStr=showCal.value;
+            resultNum=resultStr.split(/[+-/%x]/)
+            console.log(eval(resultStr))
+            console.log(resultNum)
+            showCal.value="";
+        }
+        if(e.target.innerHTML=="C"){
+            showCal.value="";
+        }
         let btnfocus=e.target.dataset.value;
         showCal.value+=btnfocus;
-        if(btnfocus="+"){
-            let a=Number(showCal.value);
-            showCal.value="";
-            console.log(a);
-        }
         // switch(calCulat){
         //     case calCulat="1":
         //         showCal.value="1"

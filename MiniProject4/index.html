@@ -6,13 +6,14 @@
 	</head>
 	<body>
 		<section class="container">
+			<P>Simple calculator</P>
 			<div class="main-contaier">
-				<button class="result-show"><input value="" id="cal-res" type="text"></button>
+				<div class="result-show"><input value="" id="cal-res" type="text"></div>
 				<div class="inerdiv">
-					<button value="*" data-value="*" class="btn-cal">*</button>
+					<button value="x" data-value="*" class="btn-cal">x</button>
 					<button value="+" data-value="+" class="btn-cal">+</button>
 					<button value="-" data-value="-" class="btn-cal">-</button>
-					<button value="%" data-value="%" class="btn-cal">%</button>	
+					<button value="^" data-value="**" class="btn-cal">POW</button>	
 				</div>
 				<div  class="inerdiv">
 					<button value="1" data-value="1" class="btn-cal">1</button>
@@ -24,17 +25,18 @@
 					<button value="4" data-value="4" class="btn-cal">4</button>
 					<button value="5" data-value="5" class="btn-cal">5</button>
 					<button value="6" data-value="6" class="btn-cal">6</button>
-					<button value="=" data-value="=" class="btn-cal">=</button>
+					<button value="=" data-value="" class="btn-cal">=</button>
 				</div>
 				<div  class="inerdiv">
 					<button value="7" data-value="7" class="btn-cal">7</button>
 					<button value="8" data-value="8" class="btn-cal">8</button>
 					<button value="9" data-value="9" class="btn-cal">9</button>
-					<button value=""  data-value="" class="btn-cal">C</button>	
+					<button value=""  data-value="" class="btn-cal">C</button>
 				</div>
 			</div>
-				<div class="inerdiv">
-				<button value="0" class="btn-cal">0</button>
+			<div class="inerdiv">
+				<button value="."  data-value="." class="btn-cal" style="font-size: 30px;">.</button>	
+				<button value="0" data-value="0" class="btn-cal">0</button>
 			</div>
 		</section>
 	<script	src="javascript.js"></script>
