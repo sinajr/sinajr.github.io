@@ -13,8 +13,6 @@
 	justify-content: center;
 }
 .main-box{
-	background:url(../image/pexels-no-name-66997.jpg);
-	background-size: cover;
 	margin:0 1%;
 	width:300px;
 	height: 300px;
@@ -35,6 +33,7 @@
 .main-box:hover .item-overlay{
 	display: block;
 	animation: box-hover 1s;
+	animation-fill-mode: forwards;
 } 
 @keyframes box-hover{
 	from{
@@ -42,6 +41,9 @@
 	}to{
 		bottom: 0;
 	}
+}
+iframe{
+	overflow-y: hidden;
 }
 .title-box{
 	text-align: center;
