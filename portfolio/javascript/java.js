@@ -103,26 +103,19 @@ arrowright.addEventListener('click',(e)=>{
 })
 /*strating slider*/
 /*dark mood*/
-let bodybg=document.querySelector('body');
-let darkBtn=document.getElementById('dark-mood');
-let darkGet=localStorage.getItem('isdark');
-let lightGet=localStorage.getItem('islight');
-if(darkGet){
-  bodybg.classList.add('darkbg')
-}else{
-  bodybg.classList.remove('darkbg');
-}
-  {
-    darkBtn.addEventListener('click',(e)=>{
-      if(bodybg.className==""){
-        localStorage.clear();
-        bodybg.classList.add('darkbg')
-        localStorage.setItem('isdark','darkmood')
+let darkBtn=document.querySelector('#dark-mood');
+darkBtn.addEventListener('click',(e)=>{
+      document.body.classList.toggle('darkbg')
+      if(document.body.className.includes('darkbg')){
+        localStorage.setItem('theme','dark')
       }else{
-        localStorage.clear();
-        bodybg.classList.remove('darkbg');
-        localStorage.setItem('islight','lightmood');
+        localStorage.setItem('theme','lightmood');
       }
     })
-  }
+    window.onload = function (){
+      localStoragetheme=localStorage.getItem('theme');
+      if(localStoragetheme==="dark"){
+        document.body.classList.add('darkbg');
+      }
+    }
 /*dark mood*/
