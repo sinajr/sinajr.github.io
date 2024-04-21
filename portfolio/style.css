@@ -42,14 +42,21 @@
         margin-right: 0 !important;
     }
     .serv-box{
+        margin: 20px 20% !important;
         width:100px !important;
         height: 100px !important;
     }
     .col-box-right {
         align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .col-box-left {
         align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
     .offers{
         font-size: 12px;
