@@ -21,19 +21,31 @@ inpt.addEventListener('keydown',(e)=>{
         todoContainer.append(newDiv);
         let newp=$.createElement('p');
         newp.classList.add('pclass')
-        newp.innerHTML=contentA.content+" and status is "+contentA.status;
+        newp.innerHTML=contentA.content;
         newDiv.append(newp);
         let newbtCom=$.createElement('button');
         newbtCom.classList.add('mybtns')
         newbtCom.innerText="Complete"
         newbtCom.setAttribute('id','btCom')
         newDiv.append(newbtCom)
+        newbtCom.addEventListener('click',(e)=>{
+
+            let getarrayItem=JSON.parse(localStorage.getItem('tostorage'));
+            getarrayItem[contentA.id].status="comlplited";
+            localStorage.setItem('tostorage',JSON.stringify(getarrayItem));
+            e.target.classList.add('bggreen');
+            console.log(e.target);
+            
+        })
         let newbtDel=$.createElement('button');
         newbtDel.classList.add('mybtns')
         newbtDel.setAttribute('id','btDel');
         newbtDel.addEventListener('click',(e)=>{
-            e.target.parentElement.remove();
-            toDOArr.splice(i,i)
+            let checkerPageDown=JSON.parse(localStorage.getItem('tostorage'));
+                e.target.parentElement.remove();
+                console.log(checkerPageDown);
+                checkerPageDown.splice(i,1);
+                localStorage.setItem('tostorage',JSON.stringify(checkerPageDown));
         })
         newbtDel.innerText="Delete"
         newDiv.append(newbtDel)
@@ -57,19 +69,32 @@ btnEnter.addEventListener('click',()=>{
         todoContainer.append(newDiv);
         let newp=$.createElement('p');
         newp.classList.add('pclass')
-        newp.innerHTML=contentA.content+" and status is "+contentA.status;
+        newp.innerHTML=contentA.content;
         newDiv.append(newp);
         let newbtCom=$.createElement('button');
         newbtCom.classList.add('mybtns')
         newbtCom.innerText="Complete"
         newbtCom.setAttribute('id','btCom')
         newDiv.append(newbtCom)
+        newbtCom.addEventListener('click',()=>{
+            
+            let getarrayItem=JSON.parse(localStorage.getItem('tostorage'));
+            getarrayItem[contentA.id].status="comlplited";
+            localStorage.setItem('tostorage',JSON.stringify(getarrayItem));
+            e.target.classList.add('bggreen');
+            console.log(e.target);
+
+        })
         let newbtDel=$.createElement('button');
         newbtDel.classList.add('mybtns')
         newbtDel.setAttribute('id','btDel');
         newbtDel.addEventListener('click',(e)=>{
-            e.target.parentElement.remove();
-            toDOArr.splice(i,i)
+            let checkerPageClick=JSON.parse(localStorage.getItem('tostorage'));
+                e.target.parentElement.remove();
+                console.log(i);
+                checkerPageClick.splice(i,1);
+                console.log(checkerPage);
+                localStorage.setItem('tostorage',JSON.stringify(checkerPageClick));
         })
         newbtDel.innerText="Delete"
         newDiv.append(newbtDel)
@@ -84,10 +109,12 @@ btnRemove.addEventListener('click',()=>{
 
 })
 window.onload=function(){
-    let checkerPage=JSON.parse(localStorage.getItem('tostorage'))
-    console.log(checkerPage)
-if(checkerPage){        
-    checkerPage.forEach(function(old){
+    let checkerPage=JSON.parse(localStorage.getItem('tostorage'))  
+    console.log(toDOArr)
+    if(checkerPage){        
+        toDOArr=checkerPage;  
+        checkerPage.forEach(function(old){
+            let indexCounter=checkerPage[i].id
             let inptOld=old.content;
             let newDiv=$.createElement('div');
             newDiv.classList.add('Todobox');
@@ -105,7 +132,12 @@ if(checkerPage){
             newbtDel.classList.add('mybtns')
             newbtDel.setAttribute('id','btDel');
             newbtDel.addEventListener('click',(e)=>{
+                let checkerPagedel=JSON.parse(localStorage.getItem('tostorage'));
                 e.target.parentElement.remove();
+                console.log(checkerPagedel[indexCounter].id);
+                checkerPagedel.splice(checkerPagedel[indexCounter].id,1);
+                localStorage.setItem('tostorage',JSON.stringify(checkerPagedel));
+         
             })
             newbtDel.innerText="Delete"
             newDiv.append(newbtDel)

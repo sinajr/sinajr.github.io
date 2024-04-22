@@ -18,6 +18,9 @@
 	border: 0;
 	cursor: pointer;
 }
+.bggreen{
+	background-color: chartreuse!important;
+}
 .mybtns:hover{
 	background-image: linear-gradient(225deg,#fb00ff,#0078ff);;
 }
