@@ -54,6 +54,7 @@ inpt.addEventListener('keydown',(e)=>{
         toDOArr.push(contentA);
         localStorage.setItem('tostorage',JSON.stringify(toDOArr));
         i++
+        inpt.value=""
     }
 })
 btnEnter.addEventListener('click',()=>{
@@ -105,6 +106,7 @@ btnEnter.addEventListener('click',()=>{
         toDOArr.push(contentA);
         localStorage.setItem('tostorage',JSON.stringify(toDOArr));
         i++
+        inpt.value=""
     }
 })
 btnRemove.addEventListener('click',()=>{
