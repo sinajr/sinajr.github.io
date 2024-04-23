@@ -33,7 +33,9 @@ inpt.addEventListener('keydown',(e)=>{
             let getarrayItem=JSON.parse(localStorage.getItem('tostorage'));
             getarrayItem[contentA.id].status="comlplited";
             localStorage.setItem('tostorage',JSON.stringify(getarrayItem));
+            e.target.classList.remove('mybtns');
             e.target.classList.add('bggreen');
+            e.target.innerHTML="Done"
             console.log(e.target);
             
         })
@@ -81,7 +83,9 @@ btnEnter.addEventListener('click',()=>{
             let getarrayItem=JSON.parse(localStorage.getItem('tostorage'));
             getarrayItem[contentA.id].status="comlplited";
             localStorage.setItem('tostorage',JSON.stringify(getarrayItem));
+            e.target.classList.remove('mybtns');
             e.target.classList.add('bggreen');
+            e.target.innerHTML="Done"
             console.log(e.target);
 
         })
@@ -121,12 +125,23 @@ window.onload=function(){
             todoContainer.append(newDiv);
             let newp=$.createElement('p');
             newp.classList.add('pclass')
-            newp.innerHTML=inptOld+" and Status is "+old.status;
+            newp.innerHTML=inptOld
             newDiv.append(newp);
             let newbtCom=$.createElement('button');
             newbtCom.classList.add('mybtns')
             newbtCom.innerText="Complete"
             newbtCom.setAttribute('id','btCom')
+            newbtCom.addEventListener('click',(e)=>{
+
+                let getarrayItem=JSON.parse(localStorage.getItem('tostorage'));
+                getarrayItem[indexCounter].status="comlplited";
+                localStorage.setItem('tostorage',JSON.stringify(getarrayItem));
+                e.target.classList.remove('mybtns');
+                e.target.classList.add('bggreen');
+                e.target.innerHTML="Done"
+                console.log(e.target);
+
+            })
             newDiv.append(newbtCom)
             let newbtDel=$.createElement('button');
             newbtDel.classList.add('mybtns')
@@ -134,7 +149,6 @@ window.onload=function(){
             newbtDel.addEventListener('click',(e)=>{
                 let checkerPagedel=JSON.parse(localStorage.getItem('tostorage'));
                 e.target.parentElement.remove();
-                console.log(checkerPagedel[indexCounter].id);
                 checkerPagedel.splice(checkerPagedel[indexCounter].id,1);
                 localStorage.setItem('tostorage',JSON.stringify(checkerPagedel));
          

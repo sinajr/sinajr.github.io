@@ -19,6 +19,12 @@
 	cursor: pointer;
 }
 .bggreen{
+	margin:30px 5px;
+	height: 40px;
+	color: #fff;
+	border-radius: 6px;
+	border: 0;
+	cursor: pointer;
 	background-color: chartreuse!important;
 }
 .mybtns:hover{
