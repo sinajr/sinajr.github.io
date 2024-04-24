@@ -508,6 +508,7 @@ background-image: url("image/wall2.jpg");
 }
 .footer-boxs{
     width: 25%;
+    z-index: 5;
 }
 .bg-footer{
     background-image: url(image/360_F_214947872_0buOruh9TiFyu9S3BT1sH6Bhvj6R2v0s.jpg);
@@ -516,5 +517,11 @@ background-image: url("image/wall2.jpg");
 }
 .social-icon ul li{ 
     width: 100%;
+}
+.bg-efect{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(45deg, hsl(212, 100%, 43%,.5),hsl(287, 96%, 68%,.5));
 }
 /*end footer*/
