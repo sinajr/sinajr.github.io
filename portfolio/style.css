@@ -12,6 +12,14 @@
         height: 200px;
         box-shadow: 0px 0px 20px 5px #cde1f8;
     }
+    .footer-container{
+        width: 100%;
+        flex-grow:1;
+        flex-wrap: wrap;
+    }
+    .footer-boxs{
+        width: 50% !important;
+    }
 }
 @media screen and (max-width: 600px){
     #about{
@@ -29,6 +37,14 @@
     }
     .offers{
         font-size: 12px;
+    }
+    .footer-container{
+        width: 100%;
+        flex-grow:1;
+        flex-wrap: wrap;
+    }
+    .footer-boxs{
+        width: 100% !important;
     }
 }
 body{
@@ -361,10 +377,19 @@ background-image: url("image/wall2.jpg");
 /*end portfolio*/
 /*start footer*/
 .footer-container{
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
+    flex-grow:1;
 }
 .footer-boxs{
     width: 25%;
-    background-color: #d95ffc;
+}
+.bg-footer{
+    background-image: url(image/360_F_214947872_0buOruh9TiFyu9S3BT1sH6Bhvj6R2v0s.jpg);
+    background-size:cover;
+    /* background-color: hsl(212, 100%, 50%,.2); */
+}
+.social-icon ul li{ 
+    width: 100%;
 }
 /*end footer*/
