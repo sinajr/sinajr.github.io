@@ -102,3 +102,20 @@ arrowright.addEventListener('click',(e)=>{
   }
 })
 /*strating slider*/
+/*dark mood*/
+let darkBtn=document.querySelector('#dark-mood');
+darkBtn.addEventListener('click',(e)=>{
+      document.body.classList.toggle('darkbg')
+      if(document.body.className.includes('darkbg')){
+        localStorage.setItem('theme','dark')
+      }else{
+        localStorage.setItem('theme','lightmood');
+      }
+    })
+    window.onload = function (){
+      localStoragetheme=localStorage.getItem('theme');
+      if(localStoragetheme==="dark"){
+        document.body.classList.add('darkbg');
+      }
+    }
+/*dark mood*/

@@ -33,7 +33,9 @@ body{
 	margin: 0 2px;
 	width: 200px;
 	position: relative;
-	border: 1px solid #ffff00;
+	border-radius: 10px;
+	background: linear-gradient(225deg, #e6e4bc, #ffffe0);
+            
 }
 .x-o{
 	align-self: center;
@@ -41,12 +43,10 @@ body{
 }
 .x{
 	text-align: center;
-	width: 50px;
-	height: 50px;
-	padding: 25px;
+	padding: 50px;
 	margin:2px 0;
-	background-color: #f000ff;
-	border-radius:50%;
+	border-radius: 50%;
+	background: linear-gradient(225deg, #d843da, #ff4fff);
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -59,9 +59,7 @@ body{
 	left:50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-	width: 50px;
-	height: 50px;
-	padding: 25px;
-	background-color: #4deeea;
-	border-radius:50%;
+	padding: 50px;
+	border-radius: 50%;
+	background: linear-gradient(225deg, #43dac9, #4fffef);	
 }

@@ -17,15 +17,20 @@
 	box-sizing: border-box;
 }
 .main-box{
-	margin:0 1%;
+	margin:20px 10px;
 	flex-grow: 1;
 	width:300px;
 	height: 300px;
-	border-radius: 15px;
-	border:1px solid #00ffff;
+	border-radius: 50px;
+	background: #ec840e;
+	box-shadow: inset -19px 19px 38px #b6660b,
+				inset 19px -19px 38px #ffa211;
 	position: relative;
 	cursor: pointer;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .item-overlay{
 	background-color: rgba(0,0,0,.5);
@@ -54,4 +59,10 @@ iframe{
 	text-align: center;
 	margin: 150px 0;
 	font-size: 24px;
+}
+.iframe-fix{
+	flex-grow: 1;
+	display: flex;
+	width: 300px;
+	height: 300px;
 }
