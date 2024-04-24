@@ -88,6 +88,7 @@
 body{
     position: relative;
 }
+/*darkmood*/
 .darkbg{
     background-color: #292929;
     color: #cde1f8;
@@ -106,6 +107,16 @@ background-color: #fb00ff !important;
 box-shadow:  20px 20px 60px #d500d9,
              -20px -20px 60px #ff00ff;
 }
+.darkbg .bg-efect{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #013065 !important;;
+}
+.darkbg .footer-Menu a{
+    color: #fff !important;
+}
+/*darkmood*/
 *{
     box-sizing:border-box;
 }
@@ -512,6 +523,7 @@ background-image: url("image/wall2.jpg");
     width: 90%;
     margin: 0 5%;
     flex-grow:1;
+    padding: 150px 0;
 }
 .footer-boxs{
     width: 25%;
@@ -520,7 +532,6 @@ background-image: url("image/wall2.jpg");
 .bg-footer{
     background-image: url(image/360_F_214947872_0buOruh9TiFyu9S3BT1sH6Bhvj6R2v0s.jpg);
     background-size:cover;
-    /* background-color: hsl(212, 100%, 50%,.2); */
 }
 .social-icon ul li{ 
     width: 100%;
