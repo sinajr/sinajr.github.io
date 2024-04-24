@@ -125,6 +125,15 @@ box-shadow:  20px 20px 60px #d500d9,
     box-shadow:5px 5px 20px #0078ff,
     -5px -5px 20px #d500d9;
 }
+.darkbg .line{
+    height: 5px;
+    width: 70%;
+    background-color: #fb00ff !important;
+    box-shadow:  5px 5px 20px #d500d9,
+             -5px -5px 20px #ff00ff;
+    margin: 2% 15%;
+    border-radius: 100%;
+}
 /*darkmood*/
 *{
     box-sizing:border-box;
@@ -291,7 +300,9 @@ a:hover{
 .line{
     height: 5px;
     width: 70%;
-    background-color: #d95ffc;
+    background: #0078ff;
+    box-shadow:  20px 20px 60px #0066d9,
+             -20px -20px 60px #008aff;
     margin: 2% 15%;
     border-radius: 100%;
 }
@@ -309,12 +320,13 @@ a:hover{
     right: 5%;
     width: 50px;
     height:50px;
-    background-color: #0078ff;
+    background: #0078ff;
+    box-shadow:  5px 5px 20px #0066d9,
+             -5px -5px 20px #008aff;
     border-radius: 25px;
     display: none;
     animation: btn-scroll .5s;
     animation-fill-mode: forwards;
-    box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     z-index: 80;
     color: #cde1f8;
 }
@@ -334,12 +346,13 @@ a:hover{
     right: 5%;
     width: 50px;
     height:50px;
-    background-color: #0078ff;
+        background: #0078ff;
+    box-shadow:  5px 5px 20px #0066d9,
+             -5px -5px 20px #008aff;
     border-radius: 25px;
     display: none;
     animation: btn-scroll-what .5s;
     animation-fill-mode: forwards;
-    box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     z-index: 80;
     color: #cde1f8;
 }
