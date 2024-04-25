@@ -17,6 +17,22 @@ $(document).ready(function() {
   });
   
 });
+
+$(document).ready(function() {
+ 
+  $("pro-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+
+
 let scrollTopp=document.querySelector(".scroll-top");
 let scrollwhat=document.querySelector(".scroll-whatsapp");
 let proBar= document.querySelectorAll('.pro-bar');
@@ -38,18 +54,14 @@ scrollTopp.addEventListener('click',()=>{
 })
 window.addEventListener('scroll',(event)=>{
   if( document.documentElement.scrollTop>500){
-    proBar[0].classList.add('pro-start');
-    proBar[1].classList.add('pro-start');
-    proBar[2].classList.add('pro-start');
-    proBar[3].classList.add('pro-start');
-    proBar[4].classList.add('pro-start');
+    proBar.forEach(function(pro){
+      pro.classList.add('pro-start');
+    })
   }else{
-    proBar[0].classList.remove('pro-start');
-    proBar[1].classList.remove('pro-start');
-    proBar[2].classList.remove('pro-start');
-    proBar[3].classList.remove('pro-start');
-    proBar[4].classList.remove('pro-start');
-  }
+    proBar.forEach(function(pro){
+      pro.classList.remove('pro-start');
+    })
+      }
 })
 window.addEventListener('scroll',(event)=>{
   if( document.documentElement.scrollTop>850){
