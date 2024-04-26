@@ -522,7 +522,7 @@ background-image: url("image/wall2.jpg");
     overflow: hidden;
 }
 .port-boxs{
-    width: 300px;
+    width: 30%;
     margin: 0 1.6666%;
     box-shadow: 0px 0px 20px 5px #cde1f8;
     cursor: pointer;
