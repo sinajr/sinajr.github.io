@@ -80,7 +80,18 @@
     .offers{
         font-size: 12px;
     }
-    
+    /* .portfolio-box{
+        position: relative !important;
+    }
+    .pic-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .pic-container img{
+        height: 300px;
+    } */
     .footer-container{
         width: 100%;
         flex-grow:1;
@@ -505,23 +516,26 @@ background-image: url("image/wall2.jpg");
     width: 100%;
     height: 400px;
     position: relative;
+
 }
 .main-container-port{
     width: 100%;
 }
 .portfolio-mainbox{
-    width: 60%;
+    width: 765px;
     margin: 0 20%;
     overflow: hidden;
-}
-.portfolio-box{
-    cursor: pointer;
-    position: relative;
-    width: 250px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba;
+    padding: 10px;
 }
 .pic-container{
     height: 300px;
-    width: 300px;
+    max-width: 300px;
+    border-radius: 25PX;
+    position: relative;
+
 }
 .content-container{
     position: absolute;
@@ -529,8 +543,11 @@ background-image: url("image/wall2.jpg");
     left: -50%;
     transform: translate(-50%,-50%);
     background-color: hsl(287, 96%, 68%,.8);
-    height: 300px !important;
+    border-radius: 25px;
+    height: 100%;
     overflow: hidden;
+    color: #fff;
+    text-shadow:1px 1px 3px #0066d9;
     font-size: 20px;
 }
 .portfolio-box:hover .content-container{
