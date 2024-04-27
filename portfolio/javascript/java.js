@@ -82,37 +82,40 @@ window.addEventListener('scroll',(event)=>{
 let arrowLeft= document.querySelector('.arrow-left');
 let arrowright= document.querySelector('.arrow-right');
 let portfolioMainBox =document.querySelector('.portfolio-mainbox');
+let mainScroll=document.querySelectorAll('.portfolio-box');
 let i=0;
 arrowLeft.addEventListener('click',(e)=>{
-  portfolioMainBox.scrollBy({
-    left:-300,
-    behavior:"smooth",
-  })
-  i--
-  if(i===-1){
+    i--
     portfolioMainBox.scrollBy({
-      left:2000,
+      left:-300,
       behavior:"smooth",
     })
-    return i=3;
-  }
-  console.log(i)
-})
-arrowright.addEventListener('click',(e)=>{
-  portfolioMainBox.scrollBy({
-    left:300,
-    behavior:"smooth",
+    if(i<=0){
+      portfolioMainBox.scrollBy({
+        left:2000,
+        behavior:"smooth",
+      })
+      return i=mainScroll.length;
+       }
+    console.log(i)
   })
-  i++
-  console.log(i)
-  if(i===4){
+  arrowright.addEventListener('click',(e)=>{
+    i++
     portfolioMainBox.scrollBy({
-      left:-2000,
+      left:300,
       behavior:"smooth",
     })
-    return i=0;
-  }
-})
+    console.log(i)
+    if(i>=mainScroll.length){
+      portfolioMainBox.scrollBy({
+        left:-2000,
+        behavior:"smooth",
+      })
+      return i=0;
+    }
+  })
+
+
 /*strating slider*/
 /*dark mood*/
 let darkBtn=document.querySelector('#dark-mood');
