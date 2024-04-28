@@ -561,6 +561,10 @@ background-image: url("image/wall2.jpg");
     text-shadow:1px 1px 3px #0066d9;
     font-size: 20px;
 }
+.porto-con{
+    text-decoration: none;
+    color: #cacaca;
+}
 .portfolio-box:hover .content-container{
     animation: contentMove 1s;
     animation-fill-mode: forwards;
