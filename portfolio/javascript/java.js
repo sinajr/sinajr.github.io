@@ -69,18 +69,18 @@ let arrowright= document.querySelector('.arrow-right');
 let portfolioMainBox =document.querySelector('.portfolio-mainbox');
 let mainScroll=document.querySelectorAll('.portfolio-box');
 if (window.matchMedia('screen and (min-width: 765px)').matches) {
-
+  let liveWidth=portfolioMainBox.offsetWidth;
   let i=0;
   console.log('>765')
   arrowLeft.addEventListener('click',(e)=>{
       i--
       portfolioMainBox.scrollBy({
-        left:-765,
+        left:-liveWidth,
         behavior:"smooth",
       })
       if(i<=0){
         portfolioMainBox.scrollBy({
-          left:2000,
+          left:liveWidth*3,
           behavior:"smooth",
         })
           return i=(mainScroll.length/2)-1;
@@ -90,13 +90,13 @@ if (window.matchMedia('screen and (min-width: 765px)').matches) {
     arrowright.addEventListener('click',(e)=>{
       i++
       portfolioMainBox.scrollBy({
-        left:765,
+        left:liveWidth,
         behavior:"smooth",
       })
       console.log(i)
       if(i>=mainScroll.length/2|| i>=(mainScroll.length/2)-1){
         portfolioMainBox.scrollBy({
-          left:-2000,
+          left:-(liveWidth*3),
           behavior:"smooth",
         })
         return i=0;
@@ -105,34 +105,36 @@ if (window.matchMedia('screen and (min-width: 765px)').matches) {
 }
 
     if (window.matchMedia('screen and (max-width: 765px)').matches) {
-      
+      let liveWidth=portfolioMainBox.offsetWidth;
+      console.log(liveWidth);
+      console.log("smaller than 750")
       let j=0;
-      console.log('<765')
-  arrowLeft.addEventListener('click',(e)=>{
+      arrowLeft.addEventListener('click',(e)=>{
       j--
+      console.log(e.target.nextElementSibling.nextElementSibling.offsetWidth)
       portfolioMainBox.scrollBy({
-        left:-765,
+        left:-liveWidth,
         behavior:"smooth",
       })
       if(j<=0){
         portfolioMainBox.scrollBy({
-          left:2000,
+          left:liveWidth*mainScroll.length,
           behavior:"smooth",
         })
         return j=mainScroll.length;
          }
-      console.log(j)
+        console.log(j)
     })
     arrowright.addEventListener('click',(e)=>{
       j++
       portfolioMainBox.scrollBy({
-        left:765,
+        left:liveWidth,
         behavior:"smooth",
       })
       console.log(j)
       if(j>=mainScroll.length){
         portfolioMainBox.scrollBy({
-          left:-2000,
+          left:-(liveWidth*mainScroll.length),
           behavior:"smooth",
         })
         return j=0;
