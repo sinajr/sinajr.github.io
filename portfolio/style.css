@@ -615,8 +615,6 @@ box-shadow:  -20px 20px 60px #bebebe,
     border-radius: 50%;
     z-index: 20;
     background: #0078ff;
-    box-shadow: 2px 2px 5px #bab5ba,
-    -2px -2px 5px #bab5ba;
 }
 .arrow-left:hover{
     transform: scale(1.1);
@@ -632,8 +630,6 @@ box-shadow:  -20px 20px 60px #bebebe,
     border-radius: 50%;
     z-index: 20;
     background: #0078ff;
-    box-shadow: 2px 2px 5px #bab5ba,
-    -2px -2px 5px #bab5ba;
 }
 .arrow-right:hover{
     transform: scale(1.1);
