@@ -137,7 +137,7 @@ box-shadow:  20px 20px 60px #d500d9,
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-color: #013065 !important;;
+    background-color: #013065 !important;
 }
 .darkbg .sina-photo img{
     width: 100px;
@@ -146,6 +146,16 @@ box-shadow:  20px 20px 60px #d500d9,
     border-radius: 50%;
     box-shadow:  5px 5px 20px #0078ff,
     -5px -5px 20px #0078ff;
+}
+.darkbg .speciality-main-box{
+    background: #013065 !important;
+box-shadow:  -8px 8px 30px #013065,
+              8px -8px 30px #013065;
+}
+.darkbg .portfolio-mainbox{
+    background: #013065 !important;
+    box-shadow:  -8px 8px 30px #013065,
+                  8px -8px 30px #013065;
 }
 .darkbg .footer-Menu a{
     color: #fff !important;
@@ -287,8 +297,8 @@ a:hover{
     height: 100px;
     border: 1px solid #fb00ff;
     border-radius: 50%;
-    box-shadow:  5px 5px 20px #d500d9,
-    -5px -5px 20px #ff00ff;
+    box-shadow:  5px 5px 15px #d500d9,
+    -5px -5px 15px #ff00ff;
 }
 .contact{
     width: 90%;
@@ -300,8 +310,8 @@ a:hover{
     margin-left:0;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
-                 -20px -20px 60px #ffffff;
+    box-shadow:  20px 20px 40px #bebebe,
+                 -20px -20px 40px #ffffff;
 }
 .progress-box{
     height: 70px;
@@ -337,8 +347,8 @@ a:hover{
     height:100%;
     border-radius: 50px;
     background: #0078ff;
-    box-shadow:  20px 20px 60px #0066d9,
-             -20px -20px 60px #008aff;
+    box-shadow:2px 2px 8px #0066d9,
+                -2px -2px 8px #008aff;
     animation: progress-bar 4s;
     animation-fill-mode: forwards;
 }
@@ -523,6 +533,19 @@ background-image: url("image/wall2.jpg");
 	top:50%;
 	left:50%;
 }
+.speciality-main-box{
+    /* box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba; */
+    border-radius: 50px;
+background: linear-gradient(225deg, #f0f0f0, #cacaca);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+}
+.speciality:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transform: rotate(360deg);
+}
 /*start potdolio*/
 .containerr{
     width: 100%;
@@ -535,11 +558,15 @@ background-image: url("image/wall2.jpg");
 }
 .portfolio-mainbox{
     width: 765px;
+border-radius: 50px;
+background: linear-gradient(225deg, #cacaca, #f0f0f0);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
     margin: 0 20%;
     overflow: hidden;
-    border-radius: 25px;
+    /* border-radius: 25px;
     box-shadow: 2px 2px 5px #bab5ba,
-    -2px -2px 5px #bab5ba;
+    -2px -2px 5px #bab5ba; */
 }
 .pic-container{
     height: 300px;
@@ -587,6 +614,9 @@ background-image: url("image/wall2.jpg");
     color: #cde1f8;
     border-radius: 50%;
     z-index: 20;
+    background: #0078ff;
+    box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba;
 }
 .arrow-left:hover{
     transform: scale(1.1);
@@ -601,6 +631,9 @@ background-image: url("image/wall2.jpg");
     color: #cde1f8;
     border-radius: 50%;
     z-index: 20;
+    background: #0078ff;
+    box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba;
 }
 .arrow-right:hover{
     transform: scale(1.1);
