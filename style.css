@@ -26,7 +26,7 @@
         width: 50% !important;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 765px){
 
     .main-box-about{
         display: block;
@@ -65,6 +65,13 @@
         width:100px !important;
         height: 100px !important;
     }
+
+.portfolio-mainbox{
+    width: 400px !important;
+}
+.portfolio-mainbox .pic-container{
+    margin:0 40px;
+}
     .col-box-right {
         align-self: center;
         display: flex;
@@ -80,7 +87,6 @@
     .offers{
         font-size: 12px;
     }
-    
     .footer-container{
         width: 100%;
         flex-grow:1;
@@ -92,6 +98,21 @@
 }
 body{
     position: relative;
+}
+h4 {
+    background: linear-gradient(90deg,#0078ff, #fb00ff);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-background-clip: text;
+            background-clip: text;
+            -ms-text-fill-color: transparent;
+            -moz-background-clip: text;
+            background-clip: text;
+            -moz-text-fill-color: transparent;
+            -o-background-clip: text;
+            background-clip: text;
+            -o-text-fill-color: transparent;
 }
 /*darkmood*/
 .darkbg{
@@ -116,7 +137,7 @@ box-shadow:  20px 20px 60px #d500d9,
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-color: #013065 !important;;
+    background-color: #013065 !important;
 }
 .darkbg .sina-photo img{
     width: 100px;
@@ -125,6 +146,16 @@ box-shadow:  20px 20px 60px #d500d9,
     border-radius: 50%;
     box-shadow:  5px 5px 20px #0078ff,
     -5px -5px 20px #0078ff;
+}
+.darkbg .speciality-main-box{
+    background: #013065 !important;
+box-shadow:  -8px 8px 30px #013065,
+              8px -8px 30px #013065;
+}
+.darkbg .portfolio-mainbox{
+    background: #013065 !important;
+    box-shadow:  -8px 8px 30px #013065,
+                  8px -8px 30px #013065;
 }
 .darkbg .footer-Menu a{
     color: #fff !important;
@@ -266,8 +297,8 @@ a:hover{
     height: 100px;
     border: 1px solid #fb00ff;
     border-radius: 50%;
-    box-shadow:  5px 5px 20px #d500d9,
-    -5px -5px 20px #ff00ff;
+    box-shadow:  5px 5px 15px #d500d9,
+    -5px -5px 15px #ff00ff;
 }
 .contact{
     width: 90%;
@@ -279,8 +310,8 @@ a:hover{
     margin-left:0;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
-                 -20px -20px 60px #ffffff;
+    box-shadow:  20px 20px 40px #bebebe,
+                 -20px -20px 40px #ffffff;
 }
 .progress-box{
     height: 70px;
@@ -316,8 +347,8 @@ a:hover{
     height:100%;
     border-radius: 50px;
     background: #0078ff;
-    box-shadow:  20px 20px 60px #0066d9,
-             -20px -20px 60px #008aff;
+    box-shadow:2px 2px 8px #0066d9,
+                -2px -2px 8px #008aff;
     animation: progress-bar 4s;
     animation-fill-mode: forwards;
 }
@@ -343,10 +374,12 @@ a:hover{
     border-radius: 100%;
 }
 
-
-
-
-
+.img-con{
+    border-radius: 50px;
+background: linear-gradient(225deg, #f0f0f0, #cacaca);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+}
 
 /*scroll to top and btn*/
 .scroll-top{
@@ -500,28 +533,47 @@ background-image: url("image/wall2.jpg");
 	top:50%;
 	left:50%;
 }
+.speciality-main-box{
+    /* box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba; */
+    border-radius: 50px;
+background: linear-gradient(225deg, #f0f0f0, #cacaca);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+}
+.speciality:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transform: rotate(360deg);
+}
 /*start potdolio*/
 .containerr{
     width: 100%;
     height: 400px;
     position: relative;
+
 }
 .main-container-port{
     width: 100%;
 }
 .portfolio-mainbox{
-    width: 60%;
+    width: 765px;
+border-radius: 50px;
+background: linear-gradient(225deg, #cacaca, #f0f0f0);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
     margin: 0 20%;
     overflow: hidden;
-}
-.portfolio-box{
-    cursor: pointer;
-    position: relative;
-    width: 250px;
+    /* border-radius: 25px;
+    box-shadow: 2px 2px 5px #bab5ba,
+    -2px -2px 5px #bab5ba; */
 }
 .pic-container{
     height: 300px;
-    width: 300px;
+    max-width: 300px;
+    border-radius: 25PX;
+    position: relative;
+
 }
 .content-container{
     position: absolute;
@@ -529,9 +581,16 @@ background-image: url("image/wall2.jpg");
     left: -50%;
     transform: translate(-50%,-50%);
     background-color: hsl(287, 96%, 68%,.8);
-    height: 300px !important;
+    border-radius: 25px;
+    height: 100%;
     overflow: hidden;
+    color: #fff;
+    text-shadow:1px 1px 3px #0066d9;
     font-size: 20px;
+}
+.porto-con{
+    text-decoration: none;
+    color: #cacaca;
 }
 .portfolio-box:hover .content-container{
     animation: contentMove 1s;
@@ -549,11 +608,13 @@ background-image: url("image/wall2.jpg");
 }
 .arrow-left{
     top:50%;
-    left:15%;
+    left:5%;
     background-color: #0078ff;
     padding: 10px;
     color: #cde1f8;
     border-radius: 50%;
+    z-index: 20;
+    background: #0078ff;
 }
 .arrow-left:hover{
     transform: scale(1.1);
@@ -562,11 +623,13 @@ background-image: url("image/wall2.jpg");
 }
 .arrow-right{
     top:50%;
-    right:15%;
+    right:5%;
     background-color: #0078ff;
     padding: 10px;
     color: #cde1f8;
     border-radius: 50%;
+    z-index: 20;
+    background: #0078ff;
 }
 .arrow-right:hover{
     transform: scale(1.1);

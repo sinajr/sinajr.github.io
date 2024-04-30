@@ -45,7 +45,6 @@ inpt.addEventListener('keydown',(e)=>{
         newbtDel.addEventListener('click',(e)=>{
             let checkerPageDown=JSON.parse(localStorage.getItem('tostorage'));
                 e.target.parentElement.remove();
-                console.log(checkerPageDown);
                 checkerPageDown.splice(i,1);
                 localStorage.setItem('tostorage',JSON.stringify(checkerPageDown));
         })
@@ -53,6 +52,7 @@ inpt.addEventListener('keydown',(e)=>{
         newDiv.append(newbtDel)
         toDOArr.push(contentA);
         localStorage.setItem('tostorage',JSON.stringify(toDOArr));
+        console.log(i)
         i++
         inpt.value=""
     }
@@ -96,9 +96,7 @@ btnEnter.addEventListener('click',()=>{
         newbtDel.addEventListener('click',(e)=>{
             let checkerPageClick=JSON.parse(localStorage.getItem('tostorage'));
                 e.target.parentElement.remove();
-                console.log(i);
                 checkerPageClick.splice(i,1);
-                console.log(checkerPage);
                 localStorage.setItem('tostorage',JSON.stringify(checkerPageClick));
         })
         newbtDel.innerText="Delete"

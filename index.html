@@ -1,53 +1,415 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Ohjelmointi-2024</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<section class="container">
-			<div class="main-container">
-				<div class="main-box">
-					<iframe  class="iframe-fix" src="https://sinajr.github.io/portfolio/" frameborder="0"></iframe>
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/portfolio/">oma cv</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/MiniProject2-httpinjector/">MiniProject2-httpinjector</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/MiniProject3">user age check</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<iframe  class="iframe-fix" src="https://sinajr.github.io/MiniProject4" frameborder="0"></iframe>
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/MiniProject4">calculate</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<iframe  class="iframe-fix" src="https://sinajr.github.io/x-o" frameborder="0"></iframe>
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/x-o">X and O</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<iframe  class="iframe-fix" src="https://sinajr.github.io/todolist" frameborder="0"></iframe>
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/todolist">To Do List with local storage</a> </h4>
-					</div>
-				</div>
-				<div class="main-box">
-					<iframe  class="iframe-fix" src="https://sinajr.github.io/bootstrap" frameborder="0"></iframe>
-					<div class="item-overlay">
-						<h4 class="title-box"> <a href="https://sinajr.github.io/bootstrap">Bootstrap</a> </h4>
-					</div>
-				</div>
-			</div>
-		</section>
-	<script	src="javascript.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sina_Jamyari</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/cfd35ecf0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--header-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-info" href="#home">
+                  Sina_Jamyari
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon rounded-2 bg-info"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#Projects">My Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="https://sinajr.github.io/practice/">Practice</a>
+                  </li>
+                </ul>
+                <div class="toggle-switch">
+                  <label class="switch-label">
+                    <input id="dark-mood" type="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>  
+              </div>
+            </div>
+          </nav>
+        <!--header-->
+        <!--slider-->
+          <div id="owl-demo" class="owl-carousel owl-theme">
+ 
+            <div class="item"><img src="image/1djXnfA.jpeg" alt="firstslide"></div>
+            <div class="item"><img src="image/port2.jpg" alt="slide2"></div>
+            <div class="item"><img src="image/first1.jpg" alt="slide3"></div>
+           
+          </div>    
+          <div></div>
+        <!--slider-->
+        <br>
+        <br>
+        <!--strat about-->
+        <h2 class="about text-center p-2">About me</h2>
+        <section id="about" class="container main-about-con">
+          <div class="main-container">
+              <div class="main-box-about">
+                  <div class="sina-photo d-flex justify-content-center align-items-center"> 
+                    <img src="image/IMG_20240425_121353_139.jpg" alt="sina-photo" title="sina-photo">
+                  </div>
+              <div class="contact">
+                <p><b>NAME:</b> Sina_Jamyari</p>
+                <p><b>PROFILE:</b> Web Designer</p>
+                <p><b>EMAIL:</b> Sina.jamyari.24@edu.luksia.fi</p>
+                <p><b>TELL:</b> 0414724039</p>
+                <p>
+                  <b>Languages:</b>
+                  <span class="d-block">
+                    Persia (äidinkieli)
+                  </span>
+                  <span class="d-block">
+                      English (erittäin hyvä)
+                  </span>
+                  <span class="d-block">
+                      Suomi (hyvä)
+                  </span>
+                </p>
+                <p>
+                  <b>Educations</b>
+                  <P>Peruskoulu (Elementary School) in Teheran, Karaj, and Kermanshah, Iran, in 2013.</P>
+                  <p>Shahid Rajai High School in Kermanshah, Iran, in 2016:
+                    <span>Studied Mathematics and Physics.</span>
+                  </p>
+                  <p>
+                    Tabarsin University, Iran (Completion certificate for 2 years of study), in 2023:
+                    <span>
+                      Studied Information Technology and Extensive Computer Networks.
+                    </span>
+                  </p>
+                </p>
+            </div>
+            </div>
+            <div class="main-box-about col">
+              <p><b>SKILL</b></p>
+              <div class="main-pro py-5 px-2 m-3">
+                <div class="progress-box d-flex flex-wrap ">
+                    <span class="row py-2">HTML 80%</span>
+                    <div class="pro-container">
+                        <div class="pro-main pro80">
+                          <div class="pro-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box d-flex flex-wrap ">
+                    <span class="row py-2">CSS 75%</span>
+                    <div class="pro-container">
+                        <div class="pro-main pro75">
+                          <div class="pro-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="progress-box d-flex flex-wrap ">
+                  <span class="row py-2">Bootstrap</span>
+                  <div class="pro-container">
+                      <div class="pro-main pro50">
+                        <div class="pro-bar"></div>
+                      </div>
+                  </div>
+                </div>
+                <div class="progress-box d-flex flex-wrap ">
+                    <span class="row py-2">Linux 30%</span>
+                    <div class="pro-container">
+                        <div class="pro-main pro30">
+                          <div class="pro-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box d-flex flex-wrap ">
+                    <span class="row py-2">JAVASCRIPT 60%</span>
+                    <div class="pro-container">
+                        <div class="pro-main pro60">
+                          <div class="pro-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box d-flex flex-wrap ">
+                  <span class="row py-2">Wordpress 90%</span>
+                  <div class="pro-container">
+                      <div class="pro-main pro90">
+                        <div class="pro-bar"></div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="main-container">
+            <div>
+            </div>
+            <div class=" mt-4">
+                <p>
+                  Hello! I’m <span class="text-danger"><b>Sina Jamyari</b></span>, a 25-year-old web developer with a passion for technology and innovation. Having lived in Finland for the past two years, I’ve embraced the vibrant tech scene and am excited to continue my journey here.
+
+With three years of experience in web development, I am committed to honing my skills and expanding my expertise. I believe in lifelong learning and strive to stay abreast of the latest industry trends and technologies. While I don’t claim to know everything, my dedication to continuous improvement drives me to keep myself updated and adapt to the ever-evolving digital landscape.
+                </p>
+                <h4>Web Development:</h4>
+                <br>
+                <p>
+                    🎯Expertise in HTML, CSS, and JavaScript for building responsive and user-friendly websites.⭐⭐⭐⭐⭐
+                    🎯Proficiency in WordPress for easy content management and customization.⭐⭐⭐⭐⭐
+                </p>
+                <h4>SEO:⭐⭐⭐</h4>
+                <br>
+                <p>
+                  Proven track record in search engine optimization (SEO) to boost your online visibility.
+                  Adept at keyword research, on-page and off-page optimization, and analytics.
+                  Can improve your website's ranking and drive organic traffic to your site.
+                </p>
+                  <br>
+                  <p>
+                    Let's collaborate and elevate your project to new heights, so I offer you a free consultation to analyzing your project or business for free!!!
+                  </p>
+            </div>
+            <div class="work-exp p-3 mt-3">
+              <h4 class="text-center mb-5">Work experience:</h4>
+              <p>English Language School (2020—2022)</p>
+              <p>System Administrator, Tehran</p>
+              <p>I was responsible for the maintenance and security of the school’s information systems. My duties included maintaining and updating all systems, and sometimes the updates involved not only software but also hardware.</p>
+            </div>
+          </div>
+        </section>
+        <!--end about-->
+        <div class="line"></div>
+        <br>
+		 <!--services strat-->
+     <section class="background-img">
+       <div id="services" class="container">
+           <h2 class=" text-center about p-4 text-info">What I can do?</h2>
+         <div class="main-service d-flex">
+            <div class="col col-left">
+                <div class="serv-box"> <span class="offers text-light"> Wordpress 	</span> </div>
+                <div class="serv-box"> <span class="offers text-light"> Coding 	</span> </div>
+                <div class="serv-box"> <span class="offers text-light"> photoshop 	</span> </div>
+            </div>
+            <div class="col col-right">
+               <div class="serv-box"> <span class="offers text-light"> ICDL </span> </div>
+               <div class="serv-box"> <span class="offers text-light"> Linux </span> </div>
+               <div class="serv-box"> <span class="offers text-light"> Bootstrap 	</span> </div>
+            </div>
+         </div>
+       </div>
+     </section>
+		<!--services End-->
+    <div class="line"></div>
+    <br>
+    <!--speciality-->
+      <section class="container-fluid text-center py-5">
+        <div class="container speciality-main-box">
+         <div class="row d-flex justify-content-center">
+            <div class="col-md-3 col-sm-6 py-3 align-self-center px-1 speciality">
+              <h4>Fast</h4>
+              <img class="py-2 w-25" src="image/icons/startup.png">
+            </div>
+            <div class="col-md-3 col-sm-6 py-3 align-self-center px-1 speciality">
+              <h4>Creative</h4>
+              <img class="py-2 w-25" src="image/icons/thinking.png">
+            </div>
+            <div class="col-md-3 col-sm-6 py-3 align-self-center px-1 speciality">
+              <h4>Experienced</h4>
+              <img class="py-2 w-25" src="image/icons/quality.png">
+            </div>
+            <div class="col-md-3 col-sm-6 py-3 align-self-center px-1 speciality">
+              <h4>Still learning</h4>
+              <img class="py-2 w-25" src="image/icons/programming.png">
+            </div>
+          </div>
+         </div>
+      </section>
+    <!--speciality-->
+		 <div class="line"></div>
+        <br>
+    <!--Strat my latest jop-->
+    <h2 id="Projects" class="text-center">My Latest Projects</h2>
+     <section class="containerr mt-5">
+      <div class="main-container-port position-relative d-flex justify-content-center">
+        <i class="fa fa-arrow-left  position-absolute arrow-left"></i>
+        <i class="fa fa-arrow-right position-absolute  arrow-right"></i>
+        <div class="row d-flex flex-nowrap overflow-hidden portfolio-mainbox">
+
+
+          <div id="selc7" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/navigaattori.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://navigaattori.eu" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="selc2" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/fitness.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://show-sample.com/fitness" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="selc3" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/contrlz.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://www.contrlz.com" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="selc1" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/cafe.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://show-sample.com/cafe" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="selc4" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/returant.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://show-sample.com/restaurant/" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+
+          </div>
+          <div id="selc5" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/car.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://show-sample.com/car" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+
+          </div>
+          <div id="selc6" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/business.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="https://show-sample.com/business" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+
+          </div>
+          <div id="selc8" class="col-md-4 col-sm-12 py-5 align-self-center portfolio-box">
+            <div class="col-sm-12 pic-container overflow-hidden">
+              <img class="w-100" src="image/portfolio/cafe.png" alt="">
+              <div class="col-12 content-container d-flex justify-content-center">
+                            <a href="#" class="porto-con py-3 align-self-center text-center">view this project
+                              <i class="col-12 fa fa-eye fa-2x"></i>
+                            </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!--End my latest jop-->
+    <!--stat footer-->
+    <br>
+    <br>
+    <div class="line"></div>
+    <br>
+    <br>
+    <footer id="contact" class="container-full bg-footer position-relative">
+      <div class="bg-efect position-absolute"></div>
+      <div class="footer-container d-flex justify-content-spacearound">
+        <div class="footer-boxs align-item-center text-center">
+            <a class="navbar-brand text-dark" href="#home">
+              Sina_Jamyari
+            </a>
+            <p class="p-3" style="text-align: justify;">🎯Expertise in HTML, CSS, and JavaScript for building responsive and user-friendly websites.⭐⭐⭐⭐⭐ 🎯Proficiency in WordPress for easy content management and customization.⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="footer-boxs align-item-center text-center">
+          <div class="contact mx-4 p-3">
+            <p><b>NAME:</b> Sina_Jamyari</p>
+            <p><b>PROFILE:</b> Web Designer</p>
+            <p><b>EMAIL:</b> Sina.jamyari.24@edu.luksia.fi</p>
+            <p><b>TELL:</b> 0414724039</p>
+        </div>
+        </div>
+        <div class="footer-boxs align-item-center text-center">
+          <ul class="navbar-nav me-auto p-3 footer-Menu">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#Projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-boxs align-item-center text-center">
+          <ul class="list-group">
+              <a href="https://wa.me/+358414724039">
+                <li class="list-group-item bg-dark mt-2 rounded-3 text-light fa fa-whatsapp"> </li>
+              </a> 
+              <a href="https://github.com/sinajr/">
+                <li class="list-group-item bg-dark mt-2 rounded-3 text-light fa fa-github"> </li>
+              </a> 
+              <a href="tel:+358414724039">
+                <li class="list-group-item bg-dark mt-2 rounded-3 text-light fa fa-phone"> </li>
+              </a> 
+              <a href="mailto:sinajamyari1378@gmail.com">
+                <li class="list-group-item bg-dark mt-2 rounded-3 text-light fa fa-envelope"> </li>
+              </a>
+              <a href="https://linkedin.com/in/sina-jamyari-jr">
+                <li class="list-group-item bg-dark mt-2 rounded-3 text-light fa fa-linkedin"> </li>
+              </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+        <div class="scroll-whatsapp"><a href="https://wa.me/+358414724039" class="fa fa-whatsapp fa-2x"></a></div>
+        <div class="scroll-top"><i class="fa fa-arrow-up"></i></div>
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="javascript/java.js"></script>
+        <script src="Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.js"></script>
+    </body>
+</html>
