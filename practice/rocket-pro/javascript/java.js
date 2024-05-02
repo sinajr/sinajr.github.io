@@ -12,7 +12,7 @@ function startLunch(){
             let randomNom=Math.round(Math.random()*100);
             switch(true){
                 case randomNom<33:
-                    lifeChance.innerHTML="rocket will expload"
+                    lifeChance.innerHTML="rocket will explode"
                     lifeChance.style.backgroundColor="#ff0000"
                     console.log(randomNom)
                     break;
