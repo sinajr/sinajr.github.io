@@ -23,7 +23,7 @@ function startLunch(){
                     break;
                 
                 case 63< randomNom && randomNom<=100:
-                    lifeChance.innerHTML="rocket has no problem"
+                    lifeChance.innerHTML="no problem"
                     lifeChance.style.backgroundColor="#00ff00"
                     console.log(randomNom)
                     break;
