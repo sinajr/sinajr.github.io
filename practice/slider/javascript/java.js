@@ -13,10 +13,16 @@ let imageUrl=[
 ]
 let index=0;
 slider.src=imageUrl[0]
-slider.className='slider-animation';
+slider.classList.add('slider-animation');
+slider.addEventListener('animationend',()=>{
+    slider.classList.remove('slider-animation');
+})
 function nextSlide(){
         index++
-        slider.className='slider-animation';
+        slider.classList.add('slider-animation');
+        slider.addEventListener('animationend',()=>{
+            slider.classList.remove('slider-animation');
+        })
         slider.src=imageUrl[index]
         if(index>imageUrl.length-1){
             index=0;
@@ -25,13 +31,15 @@ function nextSlide(){
         console.log(index)
 }
 function pervSlide(){
-slider.className='';
+    slider.classList.add('slider-animation');
+    slider.addEventListener('animationend',()=>{
+        slider.classList.remove('slider-animation');
+    })
     if(index<=0){
         index=imageUrl.length-1
         slider.src=imageUrl[index]
     }else{
         index--
-        slider.className='slider-animation';
         slider.src=imageUrl[index]
     }
     console.log(index)
