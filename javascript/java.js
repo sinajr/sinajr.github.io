@@ -25,10 +25,12 @@ $(document).ready(function() {
   darkThemeColor.addEventListener('input',pickColorDark);
   function pickColor(){
     let colorCode = themeColor.value;
+    localStorage.setItem('themeColor',themeColor.value);
     document.documentElement.style.setProperty('--primery-color',colorCode);
   }
   function pickColorDark(){
     let colorCode = darkThemeColor.value;
+    localStorage.setItem('darkThemeColor',darkThemeColor.value);
     document.documentElement.style.setProperty('--dark-primery-color',colorCode);
   }
 
@@ -175,6 +177,10 @@ darkBtn.addEventListener('click',(e)=>{
     })
     window.onload = function (){
       localStoragetheme=localStorage.getItem('theme');
+      let darkColorTheme=localStorage.getItem('darkThemeColor')
+      let ColorTheme=localStorage.getItem('themeColor')
+      document.documentElement.style.setProperty('--dark-primery-color',darkColorTheme)
+      document.documentElement.style.setProperty('--primery-color',ColorTheme)
       if(localStoragetheme==="dark"){
         document.body.classList.add('darkbg');
       }
