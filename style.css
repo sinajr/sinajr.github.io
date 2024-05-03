@@ -263,7 +263,7 @@ a:hover{
   /*header*/
 
   #theme-color{
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     border: 2px solid var(--dark-primery-color);
     background-color: #0000;
     border-radius: 25px;
@@ -278,7 +278,7 @@ a:hover{
     border-radius: 50%;
   }
   #dark-theme-color{
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     border: 2px solid var(--primery-color);
     background-color: #0000;
     border-radius: 25px;
