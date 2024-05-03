@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+ :root{
+   --primery-color: #0078ff;
+   --dark-primery-color:#fb00ff;
+}
 @media screen and (max-width: 800px){
     #about{
         display: flex;
@@ -100,7 +104,7 @@ body{
     position: relative;
 }
 h4 {
-    background: linear-gradient(90deg,#0078ff, #fb00ff);
+    background: linear-gradient(90deg var(--primery-color), var(--dark-primery-color));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,9 +133,9 @@ box-shadow:  20px 20px 60px #1d2c3e,
 }
 .darkbg .main-pro .pro-start{
     border-radius: 50px;
-background-color: #fb00ff !important;
-box-shadow:  20px 20px 60px #d500d9,
-             -20px -20px 60px #ff00ff;
+background-color: var(--dark-primery-color) !important;
+box-shadow:  20px 20px 60px var(--dark-primery-color),
+             -20px -20px 60px var(--dark-primery-color);
 }
 .darkbg .bg-efect{
     z-index: 0;
@@ -142,10 +146,10 @@ box-shadow:  20px 20px 60px #d500d9,
 .darkbg .sina-photo img{
     width: 100px;
     height: 100px;
-    border: 1px solid #0078ff;
+    border: 1px solid var(--dark-primery-color);
     border-radius: 50%;
-    box-shadow:  5px 5px 20px #0078ff,
-    -5px -5px 20px #0078ff;
+    box-shadow:  5px 5px 20px var(--dark-primery-color),
+    -5px -5px 20px var(--dark-primery-color);
 }
 .darkbg .speciality-main-box{
     background: #013065 !important;
@@ -161,27 +165,27 @@ box-shadow:  -8px 8px 30px #013065,
     color: #fff !important;
 }
 .darkbg .scroll-whatsapp{
-    background-color: #fb00ff !important;
-    box-shadow:  5px 5px 20px #d500d9,
-             -5px -5px 20px #ff00ff;
+    background-color: var(--dark-primery-color) !important;
+    box-shadow:  5px 5px 20px var(--dark-primery-color),
+             -5px -5px 20px var(--dark-primery-color);
 }
 .darkbg .scroll-top{
-    background-color: #fb00ff !important;
-    box-shadow:  5px 5px 20px #d500d9,
-             -5px -5px 20px #ff00ff;
+    background-color: var(--dark-primery-color) !important;
+    box-shadow:  5px 5px 20px var(--dark-primery-color),
+             -5px -5px 20px var(--dark-primery-color);
 }
 .darkbg .footer-boxs .list-group-item{
     border: none;
-    background-image:linear-gradient(135deg,#fb00ff,#0078ff);
-    box-shadow:5px 5px 20px #0078ff,
-    -5px -5px 20px #d500d9;
+    background-image:linear-gradient(135deg,var(--dark-primery-color),var(--primery-color));
+    box-shadow:5px 5px 20px var(--primery-color),
+    -5px -5px 20px var(--dark-primery-color);
 }
 .darkbg .line{
     height: 5px;
     width: 70%;
-    background-color: #fb00ff !important;
-    box-shadow:  5px 5px 20px #d500d9,
-             -5px -5px 20px #ff00ff;
+    background-color: var(--dark-primery-color) !important;
+    box-shadow:  5px 5px 20px var(--dark-primery-color),
+             -5px -5px 20px var(--dark-primery-color);
     margin: 2% 15%;
     border-radius: 100%;
 }
@@ -201,7 +205,7 @@ a:hover{
     width: 100px;
     height: 30px;
     --light: #d8dbe0;
-    --dark: #0078ff;
+    --dark: var(--primery-color);
     --link: rgb(27, 129, 112);
     --link-hover: rgb(24, 94, 82);
   }
@@ -257,7 +261,39 @@ a:hover{
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  
+  /*header*/
+
+  #theme-color{
+    -webkit-appearance: none;
+    border: 2px solid var(--dark-primery-color);
+    background-color: #0000;
+    border-radius: 25px;
+    width:40px;
+    height: 40px;
+  }
+  #theme-color::-webkit-color-swatch-wrapper{
+    padding: 0;
+  }
+  #theme-color::-webkit-color-swatch{
+    -webkit-appearance: none;
+    border-radius: 50%;
+  }
+  #dark-theme-color{
+    -webkit-appearance: none;
+    border: 2px solid var(--primery-color);
+    background-color: #0000;
+    border-radius: 25px;
+    width:40px;
+    height: 40px;
+  }
+  #dark-theme-color::-webkit-color-swatch-wrapper{
+    padding: 0;
+  }
+  #dark-theme-color::-webkit-color-swatch{
+    -webkit-appearance: none;
+    border-radius: 50%;
+  }
+  /*header*/
 /*slider*/
 #owl-demo .item img{
     display: block;
@@ -295,10 +331,10 @@ a:hover{
 .sina-photo img{
     width: 100px;
     height: 100px;
-    border: 1px solid #fb00ff;
+    border: 1px solid var(--primery-color);
     border-radius: 50%;
-    box-shadow:  5px 5px 15px #d500d9,
-    -5px -5px 15px #ff00ff;
+    box-shadow:  5px 5px 15px var(--primery-color),
+    -5px -5px 15px var(--primery-color);
 }
 .contact{
     width: 90%;
@@ -346,9 +382,9 @@ a:hover{
 .pro-start{
     height:100%;
     border-radius: 50px;
-    background: #0078ff;
-    box-shadow:2px 2px 8px #0066d9,
-                -2px -2px 8px #008aff;
+    background: var(--primery-color);
+    box-shadow:2px 2px 8px var(--primery-color),
+                -2px -2px 8px var(--primery-color);
     animation: progress-bar 4s;
     animation-fill-mode: forwards;
 }
@@ -367,9 +403,9 @@ a:hover{
 .line{
     height: 5px;
     width: 70%;
-    background: #0078ff;
-    box-shadow:  20px 20px 60px #0066d9,
-             -20px -20px 60px #008aff;
+    background: var(--primery-color);
+    box-shadow:  20px 20px 60px var(--primery-color),
+             -20px -20px 60px var(--primery-color);
     margin: 2% 15%;
     border-radius: 100%;
 }
@@ -389,9 +425,9 @@ box-shadow:  -20px 20px 60px #bebebe,
     right: 5%;
     width: 50px;
     height:50px;
-    background: #0078ff;
-    box-shadow:  5px 5px 20px #0066d9,
-             -5px -5px 20px #008aff;
+    background: var(--primery-color);
+    box-shadow:  5px 5px 20px var(--primery-color),
+             -5px -5px 20px var(--primery-color);
     border-radius: 25px;
     display: none;
     animation: btn-scroll .5s;
@@ -415,9 +451,9 @@ box-shadow:  -20px 20px 60px #bebebe,
     right: 5%;
     width: 50px;
     height:50px;
-        background: #0078ff;
-    box-shadow:  5px 5px 20px #0066d9,
-             -5px -5px 20px #008aff;
+        background: var(--primery-color);
+    box-shadow:  5px 5px 20px var(--primery-color),
+             -5px -5px 20px var(--primery-color);
     border-radius: 25px;
     display: none;
     animation: btn-scroll-what .5s;
@@ -476,21 +512,21 @@ background-image: url("image/wall2.jpg");
 }
 @keyframes border-color{
     25%{
-        border-top:5px solid #d95ffc;
+        border-top:5px solid var(--dark-primery-color);
         border-left:5px solid rgba(0,0,0,0);
         border-bottom:5px solid rgba(0,0,0,0);
         border-right:5px solid rgba(0,0,0,0);
     }
     50%{
         border-top:5px solid rgba(0,0,0,0);
-        border-left:5px solid #0078ff;
+        border-left:5px solid var(--primery-color);
         border-bottom:5px solid rgba(0,0,0,0);
         border-right:5px solid rgba(0,0,0,0);
     }
     75%{
         border-top:5px solid rgba(0,0,0,0);
         border-left:5px solid rgba(0,0,0,0);
-        border-bottom:5px solid #d95ffc;
+        border-bottom:5px solid var(--dark-primery-color);
         border-right:5px solid rgba(0,0,0,0);
         
     }
@@ -498,7 +534,7 @@ background-image: url("image/wall2.jpg");
         border-top:5px solid rgba(0,0,0,0);
         border-left:5px solid rgba(0,0,0,0);
         border-bottom:5px solid rgba(0,0,0,0);
-        border-right:5px solid #0078ff;
+        border-right:5px solid var(--primery-color);
     }
 }
 .col-box-left{
@@ -580,12 +616,12 @@ box-shadow:  -20px 20px 60px #bebebe,
     top: -51%;
     left: -50%;
     transform: translate(-50%,-50%);
-    background-color: hsl(287, 96%, 68%,.8);
+    background-color: #da5ffccc;
     border-radius: 25px;
     height: 100%;
     overflow: hidden;
     color: #fff;
-    text-shadow:1px 1px 3px #0066d9;
+    text-shadow:1px 1px 3px var(--primery-color);
     font-size: 20px;
 }
 .porto-con{
@@ -609,32 +645,32 @@ box-shadow:  -20px 20px 60px #bebebe,
 .arrow-left{
     top:50%;
     left:5%;
-    background-color: #0078ff;
+    background-color: var(--primery-color);
     padding: 10px;
     color: #cde1f8;
     border-radius: 50%;
     z-index: 20;
-    background: #0078ff;
+    background: var(--primery-color);
 }
 .arrow-left:hover{
     transform: scale(1.1);
     cursor: pointer;
-    background-color: #d95ffc;
+    background-color: var(--dark-primery-color);
 }
 .arrow-right{
     top:50%;
     right:5%;
-    background-color: #0078ff;
+    background-color: var(--primery-color);
     padding: 10px;
     color: #cde1f8;
     border-radius: 50%;
     z-index: 20;
-    background: #0078ff;
+    background: var(--primery-color);
 }
 .arrow-right:hover{
     transform: scale(1.1);
     cursor: pointer;
-    background-color: #d95ffc;
+    background-color: var(--dark-primery-color);
 }
 /*end portfolio*/
 /*start footer*/

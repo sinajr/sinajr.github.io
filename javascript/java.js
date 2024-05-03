@@ -17,7 +17,22 @@ $(document).ready(function() {
   });
   
 });
+/*color-pick */
 
+  let themeColor=document.getElementById('theme-color');
+  let darkThemeColor=document.getElementById('dark-theme-color');
+  themeColor.addEventListener('input',pickColor);
+  darkThemeColor.addEventListener('input',pickColorDark);
+  function pickColor(){
+    let colorCode = themeColor.value;
+    document.documentElement.style.setProperty('--primery-color',colorCode);
+  }
+  function pickColorDark(){
+    let colorCode = darkThemeColor.value;
+    document.documentElement.style.setProperty('--dark-primery-color',colorCode);
+  }
+
+/*color-pick */
 let scrollTopp=document.querySelector(".scroll-top");
 let scrollwhat=document.querySelector(".scroll-whatsapp");
 let proBar= document.querySelectorAll('.pro-bar');
