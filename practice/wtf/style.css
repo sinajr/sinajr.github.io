@@ -1,0 +1,37 @@
+:root{
+    --box-background:#b8ec27;
+    --marker-color:#000;
+}
+.container-main{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.main-box{
+    width: 500px;
+    height: 500px;
+    background-color: var(--box-background);
+    border-radius: 50%;
+}
+.lines{
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    background-color: var(--marker-color);
+    border:20px solid var(--marker-color);
+    border-left: 30px;
+    border-bottom: 50px;
+    border-radius: 0 30px;
+    transform: translate(360%, -125%);
+}
+.wood{
+    width: 5px;
+    position: absolute;
+    height: 70px;
+    background-color: var(--marker-color);
+    border:5px solid var(--marker-color);
+    left:50%;
+    border-radius: 30px 30px 0px 0px;
+    transform: translate(-105%, -100%);
+}
