@@ -63,7 +63,7 @@ body{
     transform: rotate(0deg);
 }
 .mints{
-    top:20%;
+    top:18%;
     left:50%;
     position: absolute;
     width:8px;
@@ -74,7 +74,7 @@ body{
     transform: rotate(0deg);
 }
 .seconds{
-    top:10%;
+    top:11%;
     left:50%;
     position: absolute;
     width:5px;
@@ -83,4 +83,16 @@ body{
     border-radius: 50%;
     transform-origin: bottom;
     transform: rotate(0deg);
+}
+.center-circle{
+    top:52%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    position: absolute;
+    width:20px;
+    height: 20px;
+    transform-origin:center;
+    background-color: #000000;
+    z-index: 5;
 }
