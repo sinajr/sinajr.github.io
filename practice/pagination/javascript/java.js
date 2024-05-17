@@ -58,7 +58,7 @@ let userArray=[
 let listElem=$.getElementById('list');
 let btntElem=$.getElementById('Pagination');
 let currentPage=1;
-let userPerPage=5;
+let userPerPage=2;
 let arangeArray=[]
 
 function pagination(arrays,wraper,current,PerPage){
