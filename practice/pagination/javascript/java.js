@@ -94,12 +94,6 @@ function pagination(arrays,wraper,current,PerPage){
             btntElem.append(newBtn)
             current++
         }
-        // if(arangeArray[arangeArray.length]==[]){
-            
-        //     pageBtn[pageBtn.length].style.display="none"
-        // }
-        // console.log(arangeArray.length)
-        console.log(arangeArray)
     }
 }
 function showOtherItem(arrays,wraper,current,PerPage){
