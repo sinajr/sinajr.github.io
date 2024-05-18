@@ -54,16 +54,18 @@ let userArray=[
     {name:"ali",lastneme:"master",userName:"9"},
     {name:"ali",lastneme:"master",userName:"9"},
     
+    {name:"ali",lastneme:"master",userName:"10"},
+    {name:"ali",lastneme:"master",userName:"10"}
 ]
 let listElem=$.getElementById('list');
 let btntElem=$.getElementById('Pagination');
 let currentPage=1;
-let userPerPage=2;
+let userPerPage=5;
 let arangeArray=[]
 
 function pagination(arrays,wraper,current,PerPage){
     wraper.innerHTML=""
-        let arraysava=arrays.length/PerPage;
+        let arraysava=Math.ceil(arrays.length/PerPage);
         let end= PerPage*current;
             let start= end-PerPage;
             let paginationItems= arrays.slice(start,end);
@@ -81,17 +83,16 @@ function pagination(arrays,wraper,current,PerPage){
             
         })
     if(arraysava>0){
-        for(let i=0 ;i<=arraysava;i++){
+        for(let i=1 ;i<=arraysava;i++){
             end= PerPage*current;
             start= end-PerPage;
             paginationItems= arrays.slice(start,end);     
             arangeArray.push(paginationItems);
             let newBtn=$.createElement('button');
-            newBtn.innerHTML=i+1;
-            newBtn.classList="col-md-1 btn text-center btn-outline-danger py-4 m-2 rounded"
+            newBtn.innerHTML=i;
+            newBtn.classList="col-md-1 btn text-center btn-outline-danger py-4 m-2 rounded";
             btntElem.append(newBtn)
             current++
-            
         }
         // if(arangeArray[arangeArray.length]==[]){
             
