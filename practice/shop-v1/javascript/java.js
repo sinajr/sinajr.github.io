@@ -93,7 +93,7 @@ function modalshopcard(card,imgUrl,itemName,itemPrice,qnty){
     let xcounter=priceCounter*amountCounter
     priceArray.push(xcounter)
     let removeBtn=$.createElement('button')
-    removeBtn.innerHTML="remove"
+    removeBtn.innerHTML="X"
     removeBtn.className="btn btn-outline-info float-end"
     removeBtn.setAttribute('id','removeBtnId');
     card.append(newtr)
