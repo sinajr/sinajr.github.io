@@ -6,6 +6,13 @@
     font-weight: 400;
     font-style: normal;
   }  
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kalam:wght@300;400;700&family=Pacifico&display=swap');
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
  :root{
    --primery-color: #0078ff;
