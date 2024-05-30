@@ -24,7 +24,6 @@ window.addEventListener('scroll',function() {
     let xH=document.body.clientHeight;
     let innerH=this.window.innerHeight;
     scrollPrecent=Number(userScrollFromTop/(xH-innerH))*100
-    console.log(scrollPrecent)
     scrollBar.style.width=scrollPrecent +"%"
 })
 
