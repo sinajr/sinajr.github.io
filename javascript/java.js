@@ -17,6 +17,18 @@ $(document).ready(function() {
   });
   
 });
+
+let scrollBar=$.querySelector('#scroll');
+window.addEventListener('scroll',function() {
+    let userScrollFromTop=window.scrollY;
+    let xH=document.body.clientHeight;
+    let innerH=this.window.innerHeight;
+    scrollPrecent=Number(userScrollFromTop/(xH-innerH))*100
+    console.log(scrollPrecent)
+    scrollBar.style.width=scrollPrecent +"%"
+})
+
+
 /*color-pick */
 
   let themeColor=document.getElementById('theme-color');

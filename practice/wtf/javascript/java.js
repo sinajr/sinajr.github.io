@@ -10,6 +10,23 @@ function pickTheColor(){
 let timer=$.getElementById('timer');
 setInterval(function(){
     let myTime=new Date();
-    let liveTime=""+myTime.getHours()+" : "+myTime.getMinutes()+" : "+myTime.getSeconds(s)
+    let liveTime=""+myTime.getHours()+" : "+myTime.getMinutes()+" : "+myTime.getSeconds()
     timer.innerHTML=liveTime;
 },1000)
+
+
+
+///////////////////////////////
+// window.scroll(scrollTopBar())
+// function scrollTopBar(){
+//     console.log('hi')
+// }
+let scrollBar=$.querySelector('#scroll');
+window.addEventListener('scroll',function() {
+    let userScrollFromTop=window.scrollY;
+    let xH=document.body.clientHeight;
+    let innerH=this.window.innerHeight;
+    scrollPrecent=Number(userScrollFromTop/(xH-innerH))*100
+    console.log(scrollPrecent)
+    scrollBar.style.width=scrollPrecent +"%"
+})

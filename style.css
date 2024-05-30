@@ -13,7 +13,12 @@
     font-style: normal;
   }  
   
-
+#scroll{
+    height: 5px;
+    width: 0%;
+    position: fixed;
+    background-color:var(--box-background);
+}
  :root{
    --primery-color: #0078ff;
    --dark-primery-color:#fb00ff;
