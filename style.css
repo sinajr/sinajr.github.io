@@ -17,7 +17,8 @@
     height: 5px;
     width: 0%;
     position: fixed;
-    background-color:var(--box-background);
+    background-color:var(--primery-color);
+    z-index: 50;
 }
  :root{
    --primery-color: #0078ff;

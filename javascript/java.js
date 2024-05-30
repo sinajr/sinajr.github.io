@@ -18,7 +18,7 @@ $(document).ready(function() {
   
 });
 
-let scrollBar=$.querySelector('#scroll');
+let scrollBar=document.querySelector('#scroll');
 window.addEventListener('scroll',function() {
     let userScrollFromTop=window.scrollY;
     let xH=document.body.clientHeight;
