@@ -4,6 +4,6 @@ let userinpt=$.querySelector('#userphone');
 userinpt.addEventListener('keydown', (e) =>{
     if(e.key==="Enter"){
         console.log(e)
-        console.log(phonesecret(userinpt.value))
+        // console.log(phonesecret(userinpt.value))
     }
 })
