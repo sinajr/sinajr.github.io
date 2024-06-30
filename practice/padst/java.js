@@ -4,7 +4,7 @@ let userinpt=$.querySelector('#userphone');
 let sec=$.getElementById('sec');
 userinpt.addEventListener('keydown', (e) =>{
     if(e.key==="Enter"){
-        sec.insertAdjacentHTML('beforend',`
+        sec.insertAdjacentHTML('beforeend',`
             <p>
             ${
             phonesecret(userinpt.value)
