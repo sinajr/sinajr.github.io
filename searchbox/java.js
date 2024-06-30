@@ -34,7 +34,9 @@ function suggestionWord(){
             return words.includes(searchBox.value);
         })
         arraySearch.forEach(function(w){
-            ulBox.insertAdjacentHTML('beforeend','<li class="list-group-item border-danger">'+w+'</li>')
+            ulBox.insertAdjacentHTML('beforeend',`<li class="list-group-item border-danger">
+                ${w}
+                </li>`)
         })
     }
 }
