@@ -13,3 +13,13 @@ userinpt.addEventListener('keydown', (e) =>{
             </p>`)
     }
 })
+let users=[
+    {id:1 ,name:"sina" , userName:"sina.jr" , password:"Sina22302282jr@#"},
+    {id:2 ,name:"hossein" , userName:"hoko" , password:"Hossein22302282jr@#"},
+    {id:3 ,name:"erfan" , userName:"shadow" , password:"Erfan22302282jr@#"},
+    {id:4 ,name:"elina" , userName:"ellu" , password:"Ellu22302282jr@#"}
+]
+
+setInterval((users)=>{
+    console.log(this)
+},2000)
