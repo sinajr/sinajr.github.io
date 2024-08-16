@@ -21,40 +21,150 @@ function clickUpDate(){
     .then(
         res=>{
             showBox.insertAdjacentHTML('beforeend',`
-                <div> EUR price  ${res.EUR}</div>
-                <div> USD price  ${res.USD}</div>
-                <div> TRY price  ${res.TRY}</div>
-                <div> AUD price  ${res.AUD}</div>
-                <div> BGN price  ${res.BGN}</div>
-                <div> BRL price  ${res.BRL}</div>
-                <div> CAD price  ${res.CAD}</div>
-                <div> CHF price  ${res.CHF}</div>
-                <div> CNY price  ${res.CNY}</div>
-                <div> CZK price  ${res.CZK}</div>
-                <div> DKK price  ${res.DKK}</div>
-                <div> GBP price  ${res.GBP}</div>
-                <div> HRK price  ${res.HRK}</div>
-                <div> HKD price  ${res.HKD}</div>
-                <div> HUF price  ${res.HUF}</div>
-                <div> IDR price  ${res.IDR}</div>
-                <div> HKD price  ${res.ILS}</div>
-                <div> ILS price  ${res.HKD}</div>
-                <div> INR price  ${res.INR}</div>
-                <div> ISK price  ${res.ISK}</div>
-                <div> JPY price  ${res.JPY}</div>
-                <div> KRW price  ${res.KRW}</div>
-                <div> MXN price  ${res.MXN}</div>
-                <div> MYR price  ${res.MYR}</div>
-                <div> NOK price  ${res.NOK}</div>
-                <div> NZD price  ${res.NZD}</div>
-                <div> PHP price  ${res.PHP}</div>
-                <div> PLN price  ${res.PLN}</div>
-                <div> RON price  ${res.RON}</div>
-                <div> RUB price  ${res.RUB}</div>
-                <div> SEK price  ${res.SEK}</div>
-                <div> SGD price  ${res.SGD}</div>
-                <div> THB price  ${res.THB}</div>
-                <div> ZAR price  ${res.ZAR}</div>              
+                <table class="table">
+                <tbody>
+                    <tr class="text-center">
+                        <td class="text-danger">EUR price</td>
+                        <td>${res.EUR}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> EUR price</td>  
+                    <td>${res.EUR}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> USD price</td>  
+                    <td>${res.USD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> TRY price</td>  
+                    <td>${res.TRY}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> AUD price</td>  
+                    <td>${res.AUD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> BGN price</td>  
+                    <td>${res.BGN}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> BRL price</td>  
+                    <td>${res.BRL}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> CAD price</td>  
+                    <td>${res.CAD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> CHF price</td>  
+                    <td>${res.CHF}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> CNY price</td>  
+                    <td>${res.CNY}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> CZK price</td>  
+                    <td>${res.CZK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> DKK price</td>  
+                    <td>${res.DKK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> GBP price</td>  
+                    <td>${res.GBP}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> HRK price</td>  
+                    <td>${res.HRK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> HKD price</td>  
+                    <td>${res.HKD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> HUF price</td>  
+                    <td>${res.HUF}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> IDR price</td>  
+                    <td>${res.IDR}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> HKD price</td>  
+                    <td>${res.ILS}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> ILS price</td>  
+                    <td>${res.HKD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> INR price</td>  
+                    <td>${res.INR}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> ISK price</td>  
+                    <td>${res.ISK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> JPY price</td>  
+                    <td>${res.JPY}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> KRW price</td>  
+                    <td>${res.KRW}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> MXN price</td>  
+                    <td>${res.MXN}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> MYR price</td>  
+                    <td>${res.MYR}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> NOK price</td>  
+                    <td>${res.NOK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> NZD price</td>  
+                    <td>${res.NZD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> PHP price</td>  
+                    <td>${res.PHP}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> PLN price</td>  
+                    <td>${res.PLN}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> RON price</td>  
+                    <td>${res.RON}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> RUB price</td>  
+                    <td>${res.RUB}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> SEK price</td>  
+                    <td>${res.SEK}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> SGD price</td>  
+                    <td>${res.SGD}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> THB price</td>  
+                    <td>${res.THB}</td>
+                    </tr>
+                    <tr class="text-center">
+                    <td class="text-danger"> ZAR price</td>  <td>${res.ZAR}
+                    </td></div>        
+                    </tr>
+                </tbody>
+                <table>
                 `);
         }
     )
