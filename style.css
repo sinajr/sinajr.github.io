@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: url("./assets/ramon-gilabert-TYWMP-fm4ws-unsplash.jpg");
+
+}
+
+#box{
+	position: fixed;
+	width:100%;
+	height: 60px;
+	top: 0;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#box ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 100%;
+}
+.nav-links{
+	width:90%;
+	align-items: center;
+	height: 100%;
+}
+.nav-links li{
+	padding: 0 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.nav-links li:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-links li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+#box-img img{
+	width: 80%;
+	height: 500px;
+	border-radius: 10px;
+	margin: 0 10%;
+}
+.innder-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gallery-box{
+	width: 30%;
+	text-align: justify;
+	padding: 10px;
+}
+.gallery-box img{
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+}
+.divider{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.contact-box{
+	width: 50%;
+	height: 400px;
+	padding: 20px;
+}
+.contact-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
